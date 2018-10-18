@@ -160,7 +160,7 @@ write.csv(results_8h, "/media/shinigami/Elements/RNAseq/median_combat_ebseqhmm_8
 results_24h <- merge(results_24h, gSymbols_24h, by.x=0, by.y="ensembl_gene_id")
 colnames(results_24h) <- c('ensembl_id','most_likely_path','max_PP','gene_symbol')
 results_24h <- results_24h[!(results_24h$gene_symbol == ""), ]
-write.csv(results_24h, "/media/shinigami/Elements/RNAseq/median_combat_ebseqhmm_8h.csv", row.names=F, quote=F)
+write.csv(results_24h, "/media/shinigami/Elements/RNAseq/median_combat_ebseqhmm_24h.csv", row.names=F, quote=F)
 
 results2_8h <- merge(results2_8h, gSymbols2_8h, by.x=0, by.y="ensembl_gene_id")
 colnames(results2_8h) <- c('ensembl_id','most_likely_path','max_PP','gene_symbol')
@@ -169,7 +169,7 @@ write.csv(results2_8h, "/media/shinigami/Elements/RNAseq/quantile_combat_ebseqhm
 results2_24h <- merge(results2_24h, gSymbols2_24h, by.x=0, by.y="ensembl_gene_id")
 colnames(results2_24h) <- c('ensembl_id','most_likely_path','max_PP','gene_symbol')
 results2_24h <- results2_24h[!(results2_24h$gene_symbol == ""), ]
-write.csv(results2_24h, "/media/shinigami/Elements/RNAseq/quantile_combat_ebseqhmm_8h.csv", row.names=F, quote=F)
+write.csv(results2_24h, "/media/shinigami/Elements/RNAseq/quantile_combat_ebseqhmm_24h.csv", row.names=F, quote=F)
 
 results3_8h <- merge(results3_8h, gSymbols3_8h, by.x=0, by.y="ensembl_gene_id")
 colnames(results3_8h) <- c('ensembl_id','most_likely_path','max_PP','gene_symbol')
@@ -178,4 +178,4 @@ write.csv(results3_8h, "/media/shinigami/Elements/RNAseq/tmm_combat_ebseqhmm_8h.
 results3_24h <- merge(results3_24h, gSymbols3_24h, by.x=0, by.y="ensembl_gene_id")
 colnames(results3_24h) <- c('ensembl_id','most_likely_path','max_PP','gene_symbol')
 results3_24h <- results3_24h[!(results3_24h$gene_symbol == ""), ]
-write.csv(results3_24h, "/media/shinigami/Elements/RNAseq/tmm_combat_ebseqhmm_8h.csv", row.names=F, quote=F)
+write.csv(results3_24h, "/media/shinigami/Elements/RNAseq/tmm_combat_ebseqhmm_24h.csv", row.names=F, quote=F)
